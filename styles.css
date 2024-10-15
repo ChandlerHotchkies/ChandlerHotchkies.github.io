@@ -1,0 +1,118 @@
+:root {
+  --color1: #0D92F4;
+  --color2: #77CDFF;
+  --color3: #F95454;
+  --color4: #C62E2E;
+  font-family: Sans-serif;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  height:10; 
+  
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+navbar {
+  display:flex;
+  position:fixed;
+  background: linear-gradient(45deg, var(--color1), var(--color2));
+  box-sizing: border-box;
+  justify-content: flex-end;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 3;
+}
+
+navbar a {
+  margin: 20px;
+  font-size: 22px;
+  color:black;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+  margin-top: 40px; 
+  background: linear-gradient(45deg, var(--color1), var(--color2));
+  position: relative; 
+}
+
+#welcome-section h1 {
+  font-size: 50px; 
+  margin: 0; 
+  z-index: 2; 
+}
+
+#welcome-section h3 {
+  font-size: 29px; 
+  margin: 0; 
+  z-index: 1; 
+}
+
+#projects h2 {
+  position: absolute;
+  top: 20px;
+}
+
+#projects {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background:linear-gradient(45deg,var(--color4), var(--color3));
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+#projects h3 {
+  text-align: center;
+  font-size: 29px;
+  max-width: 550px;
+}
+
+.project-tile {
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+
+.project-tile p {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  
+}
+
+#links {
+    display:flex;
+    background:linear-gradient(45deg,var(--color1), var(--color2));
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-link {
+  text-align:center;
+  font-size: 35px;
+  color: black;
+}
+
+#git-logo {
+  max-width: 35px;
+  max-height: 35px;
+  padding-right: 3px;
+}
